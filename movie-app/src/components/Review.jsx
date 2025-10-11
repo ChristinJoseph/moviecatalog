@@ -98,7 +98,7 @@ export default function MovieForm() {
 
   const submitForm = () => {
     axios
-      .post('http://localhost:3000/addfilm', { ...form, Rating: value })
+      .post('https://moviecatalog-2q10.onrender.com/addfilm', { ...form, Rating: value })
       .then((res) => {
         console.log('Movie added:', res.data);
         setForm({ Movie: '', Genre: '', ImageUrl: '', Review: '' });

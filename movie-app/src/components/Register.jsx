@@ -115,7 +115,7 @@ const Register = ({ user }) => {
 
   const submitForm = () => {
     axios
-      .post('http://localhost:3000/adduser',form)
+      .post('https://moviecatalog-2q10.onrender.com/adduser',form)
       .then((res) => {
         console.log('user added:', res.data);
         setForm({ Name: '', Email: '', Password: '',ConfirmPass: '', Address: '' });

@@ -14,7 +14,7 @@ const View = () => {
   const [rows, setRows] = useState([]);
     useEffect(() => {
     axios
-      .get("http://localhost:3000/viewfilm")
+      .get("https://moviecatalog-2q10.onrender.com/viewfilm")
       .then((res) => {
         setRows(res.data);
       })
