@@ -1,9 +1,11 @@
 const express = require('express')
 const cors = require('cors')
 const app = new express()
+require('dotenv').config();
 require("./connection")
 const filmModel = require('./models/FilmModel')
 const userModel = require('./models/UserModel')
+
 
 
 const PORT = 3000;
@@ -75,6 +77,9 @@ app.delete('/moviedelete/:id',async(req,res)=>{
         console.log(error)
     }
 })
+
+console.log(process.env.MONGO_URI);
+
 
 app.listen(PORT,()=>{
     console.log("Listening to port 3000....")
