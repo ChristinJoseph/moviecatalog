@@ -5,11 +5,13 @@ import Review from './components/Review'
 import Login from './components/Login'
 import Home from './components/Home'
 import View from './components/View'
+import { CssBaseline } from '@mui/material';
 import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
+    <CssBaseline />
     <Navbar/>
     {/* <Login/>
     <Register/>
